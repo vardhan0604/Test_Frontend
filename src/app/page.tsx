@@ -19,7 +19,7 @@ export default function Home() {
     const handleSubmit = async (): Promise<void> => {
         try {
             const parsedInput = JSON.parse(input);
-            const res = await fetch("http://localhost:5000/bfhl", {
+            const res = await fetch("https://test-backend-0kwh.onrender.com/bfhl", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(parsedInput),
